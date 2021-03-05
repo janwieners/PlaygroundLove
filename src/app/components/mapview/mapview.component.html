@@ -1,0 +1,9 @@
+<mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+<button id="show-playgrounds"
+        color="primary"
+        (click)="showPlaygrounds()"
+        mat-fab
+        aria-label="Show Playgrounds">
+  <mat-icon>child_care</mat-icon>
+</button>
+<div id="map" #map></div>
