@@ -54,7 +54,7 @@ export class MapviewComponent implements AfterViewInit {
     const wayQuery = 'way[' + overpassQuery + '](' + bounds + ');';
     const relationQuery = 'relation[' + overpassQuery + '](' + bounds + ');';
     const query = '?data=[out:json][timeout:15];(' + nodeQuery + wayQuery + relationQuery + ');out body geom;';
-    const baseUrl = 'http://overpass-api.de/api/interpreter';
+    const baseUrl = 'https://overpass-api.de/api/interpreter';
     const resultUrl = baseUrl + query;
     return resultUrl;
   }
