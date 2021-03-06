@@ -1,4 +1,4 @@
-# AberJetztSchon
+# PlaygroundLove
 
 Built this for my daughter (and me) in order to find some nice playgrounds wherever we are. Enjoy!
 
