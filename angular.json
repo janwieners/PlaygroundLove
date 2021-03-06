@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AberJetztSchon": {
+    "PlaygroundLove": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/AberJetztSchon",
+            "outputPath": "dist/PlaygroundLove",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "AberJetztSchon:build"
+            "browserTarget": "PlaygroundLove:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "AberJetztSchon:build:production"
+              "browserTarget": "PlaygroundLove:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AberJetztSchon:build"
+            "browserTarget": "PlaygroundLove:build"
           }
         },
         "test": {
@@ -116,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "AberJetztSchon:serve"
+            "devServerTarget": "PlaygroundLove:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "AberJetztSchon:serve:production"
+              "devServerTarget": "PlaygroundLove:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "AberJetztSchon"
+  "defaultProject": "PlaygroundLove"
 }
