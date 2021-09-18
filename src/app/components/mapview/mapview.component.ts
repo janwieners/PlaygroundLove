@@ -78,7 +78,6 @@ export class MapviewComponent implements AfterViewInit {
   }
 
   private showDetails(feature: any): void {
-    console.log(feature);
     this.featureDetail.open(FeatureDetailComponent, {data: feature});
   }
 

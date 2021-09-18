@@ -1,10 +1,10 @@
 # PlaygroundLove
 
-Built this for my daughter (and me) in order to find some nice playgrounds wherever we are. Enjoy!
+Built this for my daughter and me in order to find some nice playgrounds wherever we are.
 
-Based on Angular, Leaflet, OpenStreetMap / Overpass, built with ♥.
+Based on Angular, Leaflet, OpenStreetMap's Overpass API.
 
-Running app: https://playgroundlove.jan-wieners.de.
+Running app: https://jan-wieners.de/dev/playgroundlove.
 
 ## Development server
 
