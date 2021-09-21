@@ -4,7 +4,7 @@ Built this for my daughter and me in order to find some nice playgrounds whereve
 
 Based on Angular, Leaflet, OpenStreetMap's Overpass API.
 
-Running app: https://jan-wieners.de/dev/playgroundlove.
+Running app: https://dev.jan-wieners.de/playgroundlove.
 
 ## Development server
 
