@@ -89,7 +89,7 @@ export class MapviewComponent implements AfterViewInit {
 
   public showPlaygrounds(): void {
     this.loading = true;
-    const url = this.buildOverpassApiUrl('leisure=playground');
+    const url = this.buildOverpassApiUrl('shop=kiosk');
     this.http.get(url)
       .subscribe(data => {
         L.geoJSON(osmtogeojson(data) as FeatureCollection, {
