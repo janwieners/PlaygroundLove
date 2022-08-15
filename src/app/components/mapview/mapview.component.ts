@@ -55,8 +55,8 @@ export class MapviewComponent implements AfterViewInit {
     const relationQuery = 'relation[' + overpassQuery + '](' + bounds + ');';
     const query = '?data=[out:json][timeout:15];(' + nodeQuery + wayQuery + relationQuery + ');out body geom;';
     const baseUrl = 'https://overpass-api.de/api/interpreter';
-    const resultUrl = baseUrl + query;
-    return resultUrl;
+    console.log(baseUrl + query)
+    return baseUrl + query;
   }
 
   ngAfterViewInit(): void {
@@ -87,9 +87,9 @@ export class MapviewComponent implements AfterViewInit {
     });
   }
 
-  public showPlaygrounds(): void {
+  private getData(query: string): void {
     this.loading = true;
-    this.http.get(this.buildOverpassApiUrl('leisure=playground')) // shop=kiosk
+    this.http.get(this.buildOverpassApiUrl(query))
       .subscribe(data => {
         L.geoJSON(osmtogeojson(data) as FeatureCollection, {
           style(): any {
@@ -110,5 +110,13 @@ export class MapviewComponent implements AfterViewInit {
 
         this.loading = false;
       });
+  }
+
+  public showPlaygrounds(): void {
+    this.getData('leisure=playground');
+  }
+
+  public showKiosks(): void {
+    this.getData('shop=kiosk');
   }
 }

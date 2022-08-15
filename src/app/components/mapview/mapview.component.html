@@ -1,9 +1,18 @@
 <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
-<button id="show-playgrounds"
-        color="primary"
-        (click)="showPlaygrounds()"
-        mat-fab
-        aria-label="Show Playgrounds">
-  <mat-icon>child_care</mat-icon>
-</button>
+<section id="buttons">
+  <button id="show-playgrounds"
+          color="primary"
+          (click)="showPlaygrounds()"
+          mat-fab
+          aria-label="Show Playgrounds">
+    <mat-icon>child_care</mat-icon>
+  </button>
+  <button id="show-kiosks"
+          color="primary"
+          (click)="showKiosks()"
+          mat-fab
+          aria-label="Show Kiosks">
+    <mat-icon>shopping_cart</mat-icon>
+  </button>
+</section>
 <div id="map" #map></div>
